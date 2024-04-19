@@ -1,0 +1,166 @@
+body {
+    background-image: url("assets/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 2% 10%;
+    background-color: rgba(38, 8, 20, 0.7);
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 10px 30px;
+    font-family: 'Lora', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 20px;
+    padding: 0px 20px 30px;
+}
+
+h1 {
+    color: #CC3636;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black, 0 0 1em black;
+    margin: auto;
+}
+
+.par, .white {
+    color: #ECE8D9;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.par {
+    margin: 20px 0px 5px;
+}
+
+.service {
+    color: #ECE8D9;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px #000000;
+    margin: 20px 0px 10px;
+}
+
+input {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border: 2px solid #ECE8D9;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #ECE8D9;
+    box-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+button {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    border: 2px solid #ECE8D9;
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px black, 0 0 1em black;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+#addTip {
+    background-color: rgba(242, 228, 232, 0.5);
+    color: #000000;
+    padding: 5px 10px;
+}
+
+#addTip:hover {
+    background-color: #ECE8D9;
+}
+
+#btn {
+    background: #7FB12D;
+    color: #000000;
+    margin-top: 20px;
+    padding: 9px 10px;
+}
+
+#btn:hover {
+    background-color: #3B7E00;
+    color: #ECE8D9;
+}
+
+#tip {
+    font-family: 'Lora', serif;
+    display: none;
+    font-size: 15px;
+    padding: 3px;
+    border: none;
+    border-radius: 7px;
+    background-color: #ECE8D9;
+}
+
+#showTotalAmountToPay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+#billSplit, #totalTip, #totalAmount {
+    background: rgba(84, 180, 53, 0.6);
+    color: #ECE8D9;
+    padding: 20px;
+    font-size: 25px;
+    border: 2px solid #ECE8D9;
+    border-radius: 50px;
+    text-shadow: 1px 1px 2px #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dividedBill, #dividedTip, #billAndTip {
+    color: #CC3636;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.split {
+    margin: 0px 0px 10px;
+}
+
+@media all and (max-width: 540px) {
+    #container {
+        background-color: rgba(38, 8, 20, 0.6);
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #showTotalAmountToPay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #billSplit, #totalTip, #totalAmount {
+        font-size: 20px;
+        padding: 20px 50px;
+    }
+
+    #dividedBill, #dividedTip, #billAndTip {
+        font-size: 25px;
+    }
+}
